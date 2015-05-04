@@ -15,6 +15,9 @@
 		1B3D876B1AE9DE3600C0F430 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B3D876A1AE9DE3600C0F430 /* Images.xcassets */; };
 		1B3D876E1AE9DE3600C0F430 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B3D876C1AE9DE3600C0F430 /* LaunchScreen.xib */; };
 		1B3D877A1AE9DE3600C0F430 /* SampleCoreDataFriendsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B3D87791AE9DE3600C0F430 /* SampleCoreDataFriendsTests.m */; };
+		1B3D87841AE9DECB00C0F430 /* FriendsPerArea.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1B3D87831AE9DECB00C0F430 /* FriendsPerArea.plist */; };
+		1B3D87871AE9E55E00C0F430 /* FriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B3D87861AE9E55E00C0F430 /* FriendsViewController.m */; };
+		1BD63CE21AEDADE800752EDB /* Friend.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BD63CE11AEDADE800752EDB /* Friend.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +45,11 @@
 		1B3D87731AE9DE3600C0F430 /* SampleCoreDataFriendsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleCoreDataFriendsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B3D87781AE9DE3600C0F430 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1B3D87791AE9DE3600C0F430 /* SampleCoreDataFriendsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SampleCoreDataFriendsTests.m; sourceTree = "<group>"; };
+		1B3D87831AE9DECB00C0F430 /* FriendsPerArea.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = FriendsPerArea.plist; sourceTree = "<group>"; };
+		1B3D87851AE9E55E00C0F430 /* FriendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendsViewController.h; sourceTree = "<group>"; };
+		1B3D87861AE9E55E00C0F430 /* FriendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendsViewController.m; sourceTree = "<group>"; };
+		1BD63CE01AEDADE800752EDB /* Friend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Friend.h; sourceTree = "<group>"; };
+		1BD63CE11AEDADE800752EDB /* Friend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Friend.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,10 +95,14 @@
 				1B3D875F1AE9DE3600C0F430 /* AppDelegate.m */,
 				1B3D87641AE9DE3600C0F430 /* ViewController.h */,
 				1B3D87651AE9DE3600C0F430 /* ViewController.m */,
+				1B3D87851AE9E55E00C0F430 /* FriendsViewController.h */,
+				1B3D87861AE9E55E00C0F430 /* FriendsViewController.m */,
 				1B3D87671AE9DE3600C0F430 /* Main.storyboard */,
 				1B3D876A1AE9DE3600C0F430 /* Images.xcassets */,
 				1B3D876C1AE9DE3600C0F430 /* LaunchScreen.xib */,
 				1B3D87611AE9DE3600C0F430 /* SampleCoreDataFriends.xcdatamodeld */,
+				1BD63CE01AEDADE800752EDB /* Friend.h */,
+				1BD63CE11AEDADE800752EDB /* Friend.m */,
 				1B3D875A1AE9DE3600C0F430 /* Supporting Files */,
 			);
 			path = SampleCoreDataFriends;
@@ -99,6 +111,7 @@
 		1B3D875A1AE9DE3600C0F430 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1B3D87831AE9DECB00C0F430 /* FriendsPerArea.plist */,
 				1B3D875B1AE9DE3600C0F430 /* Info.plist */,
 				1B3D875C1AE9DE3600C0F430 /* main.m */,
 			);
@@ -203,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B3D87691AE9DE3600C0F430 /* Main.storyboard in Resources */,
+				1B3D87841AE9DECB00C0F430 /* FriendsPerArea.plist in Resources */,
 				1B3D876E1AE9DE3600C0F430 /* LaunchScreen.xib in Resources */,
 				1B3D876B1AE9DE3600C0F430 /* Images.xcassets in Resources */,
 			);
@@ -222,8 +236,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B3D87871AE9E55E00C0F430 /* FriendsViewController.m in Sources */,
 				1B3D87601AE9DE3600C0F430 /* AppDelegate.m in Sources */,
 				1B3D87631AE9DE3600C0F430 /* SampleCoreDataFriends.xcdatamodeld in Sources */,
+				1BD63CE21AEDADE800752EDB /* Friend.m in Sources */,
 				1B3D87661AE9DE3600C0F430 /* ViewController.m in Sources */,
 				1B3D875D1AE9DE3600C0F430 /* main.m in Sources */,
 			);
@@ -420,6 +436,7 @@
 				1B3D877F1AE9DE3600C0F430 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1B3D87801AE9DE3600C0F430 /* Build configuration list for PBXNativeTarget "SampleCoreDataFriendsTests" */ = {
 			isa = XCConfigurationList;
@@ -428,6 +445,7 @@
 				1B3D87821AE9DE3600C0F430 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
